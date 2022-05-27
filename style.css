@@ -1,0 +1,27 @@
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container li {
+  list-style: none;
+  padding-top: 5px;
+}
+
+.container li a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "norse";
+  font-size: 72pt;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url(../odin-recipes/resources/Norse.otf);
+}
