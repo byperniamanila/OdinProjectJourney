@@ -5,4 +5,4 @@ This is a sample of a recipe page and the first exercise following The Odin Proj
 Demonstrated skills:
 - HTML
 - CSS
-    - Flexbox
+    - Grid (not part of the exercise)
