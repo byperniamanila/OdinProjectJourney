@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap");
+@font-face {
+  font-family: "Norse";
+  src: url(../odin-recipes/resources/Norse.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #edf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+.recipes {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dish {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.dish__header h3, a {
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+}
+
+.dish__header p,
+.dish__definition {
+  font-size: 18px;
+}
+
+.dish__header p {
+  font-weight: 500;
+}
+
+.dish__definition {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.dish__img {
+  border-radius: 5%;
+  border: 5px solid #bfc3c9;
+  height: auto;
+  width: 100%;
+}
+
+.dish__img1 {
+  height: auto;
+  width: 100%;
+  border-radius: 5%;
+  border: 5px solid #bfc3c9;
+}
+
+.dish:nth-of-type(1) {
+  grid-column: 1 / 3;
+}
+
+.dish:nth-of-type(2) {
+  justify-content: flex-start;
+}
+
+.dish:nth-of-type(6) {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  background: none;
+  box-shadow: none;
+}
+
+.dish h1 {
+  font-family: "norse";
+  font-size: 72pt;
+}
+
+@media (max-width: 1024px) {
+  .recipes {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .dish:nth-of-type(1) {
+    grid-column: 1;
+  }
+
+  .dish:nth-of-type(6) {
+    grid-column: 1;
+    background: none;
+    box-shadow: none;
+  }
+}
